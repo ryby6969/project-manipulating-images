@@ -24,9 +24,9 @@ for filename in os.listdir('originals'):
             height = int((SQUARE_FIT_SIZE / width) * height)
             width = SQUARE_FIT_SIZE
 
-    else:
-        width = int((SQUARE_FIT_SIZE / height) * width)
-        height = SQUARE_FIT_SIZE
+        else:
+            width = int((SQUARE_FIT_SIZE / height) * width)
+            height = SQUARE_FIT_SIZE
 
     #Resize the image.
         print('Resizing %s...' % (filename))
